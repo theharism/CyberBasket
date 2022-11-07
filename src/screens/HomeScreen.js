@@ -19,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
 
       {errorMessage ? (
         <Text style={{ top: 40, left: 25, position: "relative" }}>
-          {errorMessage}
+          {errorMessage | SearchApi}
         </Text>
       ) : null}
 
